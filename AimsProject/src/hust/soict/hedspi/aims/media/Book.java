@@ -16,9 +16,22 @@ public class Book extends Media implements Comparable<Book> {
 			super();
 		}
 		
-		public Book(String title, String author) {
-			super(title);
-			this.addAuthor(author);
+		public Book(String title,String category,float cost) {
+			super(title,category,cost);
+		}
+		
+		public Book(String title, String category,float cost, ArrayList<String> authors) {
+			super(title,category,cost);
+			this.authors = authors;
+		}
+		
+		public Book(int idBook, String titleBook, String categoryBook, float costBook, ArrayList<String> authors) {
+			this(titleBook,categoryBook,costBook);
+			this.id = idBook;
+			this.authors = authors;
+		}
+		public Book(int id, String title, String category, float cost) {
+			super(id, title, category, cost);
 		}
 		
 		// get, set

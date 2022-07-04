@@ -107,5 +107,16 @@ public class Order {
 		}
     	
     }
+    
+    public boolean isEmpty() {
+    	if(itemsOrdered.size() == 0) {
+    		return true;
+    	}
+    	return false;
+    }
+    
+    public ArrayList<Media> getItemsOrdered(){
+		return this.itemsOrdered;
+	}
 }
 

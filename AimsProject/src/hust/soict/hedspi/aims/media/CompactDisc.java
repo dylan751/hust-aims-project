@@ -6,6 +6,10 @@ import java.util.Iterator;
 public class CompactDisc extends Disc implements Playable, Comparable<CompactDisc> {
 	private String artist;
 	private ArrayList<Track> tracks = new ArrayList<Track>();
+	private String playCd = "";
+	public String getPlaying() {
+		return playCd;
+	}
 	
 	public CompactDisc() {
 		super();
@@ -15,6 +19,19 @@ public class CompactDisc extends Disc implements Playable, Comparable<CompactDis
 		super(title);
 		this.artist = artist;
 		this.addTrack(track);
+	}
+	public CompactDisc(int id,String title,String category,float cost,int length,String director,String artist) {
+		super(id,title,category,cost,length,director);
+		this.artist = artist;
+	}
+	public CompactDisc(int id,String title,String category,float cost,int length,String director,String artist,ArrayList<Track> tracks) {
+		super(id,title,category,cost,length,director);
+		this.artist = artist;
+		this.tracks = tracks;
+	}
+	public CompactDisc(int id, String title, String category, float cost, String director, String artist) {
+		super(id,title,category,cost,director);
+		this.artist = artist;
 	}
 	
 	public String getArtist() {
@@ -65,5 +82,6 @@ public class CompactDisc extends Disc implements Playable, Comparable<CompactDis
 		return this.id - obj.id;
 		
 	}
+
 	
 }
