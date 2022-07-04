@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="84.0" layoutY="93.0" prefHeight="320.0" prefWidth="463.0" style="-fx-border-color: Black;">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="77.0" prefWidth="474.0" text="1. Create new order                     ">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="77.0" prefWidth="474.0" text="2. Add item to the order             ">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="77.0" prefWidth="474.0" text="3. Delete item by id                     ">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="77.0" prefWidth="474.0" text="4. Display the items list of order   " />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <Text fx:id="TextTitle" layoutX="154.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Management Application" textAlignment="CENTER">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="80.0" fitWidth="90.0" pickOnBounds="true" smooth="false" />
+   </children>
+</AnchorPane>
